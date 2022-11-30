@@ -30,6 +30,8 @@ class CreateProductRequest extends FormRequest
             'price' => 'required|numeric',
             'price_promotion' => 'required|numeric',
             'tax' => 'required|numeric',
+            'promotion' => 'in:0,1',
+            'active' => 'in:0,1',
         ];
     }
 }
