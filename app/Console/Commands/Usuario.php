@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\User;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class Usuario extends Command
@@ -40,7 +41,7 @@ class Usuario extends Command
         User::create([
             'name' => $this->nome,
             'email' => $this->email,
-            'password' => $this->senha
+            'password' => Hash::make($this->senha)
         ]);
 
         $this->info('Usuário criado com sucesso!');
