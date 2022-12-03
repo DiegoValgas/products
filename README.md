@@ -2,19 +2,19 @@
 <p align="center">Api contendo endpoins para login, cadastro e listagem de produtos.</p>
 
 <!--ts-->
-    * [Tenologias utilizadas](#tecnologias)
-    * [Containers](#inicializacao)
-        * [Inicializar](#inicializacao)
-        * [Encerrar](#encerrar)
-    * [Primeiros passos](#primeiros_passos)
-        * [Instalar dependências](#primeiros_passos)
-        * [Rodar migrations](#migrations)
-    * [Comandos adicionais](#comandos)
-        * [Criar usuário](#comandos)
-    * [Endpoints](#endpoints)
-        * [Login](#login)
-        * [Categorias](#categorias)
-        * [Produtos](#produtos)
+* [Tenologias utilizadas](#tecnologias)
+* [Containers](#inicializacao)
+    * [Inicializar](#inicializacao)
+    * [Encerrar](#encerrar)
+* [Primeiros passos](#primeiros_passos)
+    * [Instalar dependências](#primeiros_passos)
+    * [Rodar migrations](#migrations)
+* [Comandos adicionais](#comandos)
+    * [Criar usuário](#comandos)
+* [Endpoints](#endpoints)
+    * [Login](#login)
+    * [Categorias](#categorias)
+    * [Produtos](#produtos)
 <!--te-->
 
 <h2 id="tecnologias">Tenologias utilizadas</h2>
