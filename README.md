@@ -3,6 +3,7 @@
 
 <!--ts-->
 * [Tenologias utilizadas](#tecnologias)
+* [Observações](#sobre)
 * [Containers](#inicializacao)
     * [Inicializar](#inicializacao)
     * [Encerrar](#encerrar)
@@ -17,11 +18,15 @@
     * [Produtos](#produtos)
 <!--te-->
 
-<h2 id="tecnologias">Tenologias utilizadas</h2>
+<h2 id="tecnologias">Tecnologias utilizadas</h2>
 
 - [Docker](https://www.docker.com/)
 - [Laravel](https://laravel.com/)
 - [Mysql](https://www.mysql.com/)
+
+<h2 id="sobre">Observações</h2>
+
+<p>O arquivo .ENV já contém as configurações necessárias para rodar a aplicação. Para entender melhor como estão dispostos os containers, você pode ver mais detalhes nos arquivos docker-compose.yml e Dockerfile.</p>
 
 <h2 id="inicializacao">Containers</h2>
 <p>Para inicializar os containers utilizados no projeto, execute o comando:</p>
