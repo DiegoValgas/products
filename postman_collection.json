@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "9a8e8725-fb2c-4b67-9ba1-b04f3b47f865",
+		"name": "Tiki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23330980"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Acessórios",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Peças",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/categories/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/categories/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Reposição",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Produto 2",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "220",
+									"type": "text"
+								},
+								{
+									"key": "price_promotion",
+									"value": "210",
+									"type": "text"
+								},
+								{
+									"key": "tax",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "promotion",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Produto",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "320",
+									"type": "text"
+								},
+								{
+									"key": "price_promotion",
+									"value": "210",
+									"type": "text"
+								},
+								{
+									"key": "tax",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "promotion",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|txNI23rHa4nWGHPdj8VbxsiPIMxXWfcFaHO4oEKD",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "diego.valgas@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

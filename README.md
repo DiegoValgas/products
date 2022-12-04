@@ -28,6 +28,8 @@
 
 <p>O arquivo .ENV já contém as configurações necessárias para rodar a aplicação. Para entender melhor como estão dispostos os containers, você pode ver mais detalhes nos arquivos docker-compose.yml e Dockerfile.</p>
 
+<p>Caso utilize o Postman para realizar as requisições, você pode importar o arquivo postman_collection.json que contém todos os endpoints configurados.</p>
+
 <h2 id="inicializacao">Containers</h2>
 <p>Para inicializar os containers utilizados no projeto, execute o comando:</p>
 
